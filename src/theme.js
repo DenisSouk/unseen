@@ -17088,6 +17088,7 @@
                   });
                 }),
                 n.off("AssetLoader:beforeResolve", this.onFirstAssetsLoad);
+              this.onFirstAssetsLoad();
             }),
             (i = "onFirstAssetsLoad") in (t = this)
               ? Object.defineProperty(t, i, {
@@ -17099,6 +17100,7 @@
               : (t[i] = s);
         }
         onFirstLoad() {
+          if (typeof window !== "undefined") window.__unseenApp = this;
           if (
             ((o.ASScroll = new (d())({
               disableRaf: !0,
