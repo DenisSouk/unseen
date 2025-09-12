@@ -15222,14 +15222,14 @@
           });
         }
         load() {
-          (this.canvasArrow = new Image()),
-            o.AssetLoader.add(
-              new Promise((e) => {
-                (this.canvasArrow.onload = e),
-                  (this.canvasArrow.src =
-                    "/wp-content/themes/unseen/resources/assets/svg-sprite/arrow.svg");
-              })
-            );
+          // (this.canvasArrow = new Image()),
+          //   o.AssetLoader.add(
+          //     new Promise((e) => {
+          //       (this.canvasArrow.onload = e),
+          //         (this.canvasArrow.src =
+          //           "/wp-content/themes/unseen/resources/assets/svg-sprite/arrow.svg");
+          //     })
+          //   );
           for (let e = 0; e < window.projects.length; e++) {
             const t = window.projects[e],
               i = {
@@ -19768,24 +19768,24 @@
         }
       }
       class Ho {
-        static toEyes() {
-          p("link[rel*='icon']").forEach((e) => {
-            e.href =
-              "/wp-content/themes/unseen/resources/assets/images/eyes-" +
-              e.sizes +
-              ".png?=" +
-              Math.random();
-          });
-        }
-        static toDefault() {
-          p("link[rel*='icon']").forEach((e) => {
-            e.href =
-              "/wp-content/themes/unseen/public/favicon/favicon-" +
-              e.sizes +
-              ".png?=" +
-              Math.random();
-          });
-        }
+        // static toEyes() {
+        //   p("link[rel*='icon']").forEach((e) => {
+        //     e.href =
+        //       "/eyes-" +
+        //       e.sizes +
+        //       ".png?=" +
+        //       Math.random();
+        //   });
+        // }
+        // static toDefault() {
+        //   p("link[rel*='icon']").forEach((e) => {
+        //     e.href =
+        //       "/wp-content/themes/unseen/public/favicon/favicon-" +
+        //       e.sizes +
+        //       ".png?=" +
+        //       Math.random();
+        //   });
+        // }
       }
       function No(e, t) {
         var i = Object.keys(e);
@@ -19816,8 +19816,8 @@
         static init() {
           "scrollRestoration" in window.history &&
             (window.history.scrollRestoration = "manual"),
-            n.on("DOMContentLoaded", window, Wo.onDOMContentLoaded),
-            this.handleFavicon();
+            n.on("DOMContentLoaded", window, Wo.onDOMContentLoaded)
+           // this.handleFavicon();
         }
         static onDOMContentLoaded() {
           Object.assign(

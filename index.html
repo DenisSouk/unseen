@@ -1200,16 +1200,8 @@ C58.3,39.1,57.8,38.5,57.1,38.5z"
             </span>
           </a>
         </div>
-        <script type="module" src="./src/main.js"></script>
-        <script defer src="./src/manifest.js" id="manifest-js"></script>
-        <script defer src="./src/vendor.js" id="vendor-js"></script>
-
-        <script id="theme-js-extra">
-          var globalData = {
-            publicUrl: "/unseen/public/",
-            assetsUrl: "/unseen/resources/assets/",
-          };
-        </script>
+        
+       
         <script>
           projects = [
             {
@@ -1232,8 +1224,8 @@ C58.3,39.1,57.8,38.5,57.1,38.5z"
               },
               images: [
                 {
-                  name: "sov_1-078x",
-                  image: "http://localhost:5173/futuristic.jpg",
+                  name: "futuristic-sov",
+                  image: "http:\/\/localhost:5173\/futuristic-scale.jpg",
                   image_size: [1024, 538],
                   type: "image",
                   position: { x: 0, y: 0, z: 0 },
@@ -1262,8 +1254,8 @@ C58.3,39.1,57.8,38.5,57.1,38.5z"
               },
               images: [
                 {
-                  name: "desktop-jqVx",
-                  image: "http://localhost:5173/futuristic.jpg",
+                  name: "futuristic-blueyard",
+                  image: "http:\/\/localhost:5173\/futuristic-scale.jpg",
                   image_size: [1024, 768],
                   type: "image",
                   position: { x: 0, y: 0, z: 0 },
@@ -1288,19 +1280,13 @@ C58.3,39.1,57.8,38.5,57.1,38.5z"
               "0internal": { or: { external: 1 } },
               images: [
                 {
-                  name: "phone-4W2j",
-                  image: "http://localhost:5173/futuristic.jpg",
+                  name: "futuristic",
+                  image: "http:\/\/localhost:5173\/futuristic-scale.jpg",
                   image_size: [1024, 682],
                   type: "image",
                   position: { x: -450, y: 20, z: -100 },
                 },
-                {
-                  name: "screen-06-DInt",
-                  image: "http://localhost:5173/futuristic.jpg",
-                  image_size: [1024, 1024],
-                  type: "image",
-                  position: { x: 403, y: 150, z: -301 },
-                },
+              
               ],
               internal: { or: { external: 1 } },
               videos: false,
@@ -1308,8 +1294,19 @@ C58.3,39.1,57.8,38.5,57.1,38.5z"
             },
           ];
         </script>
+         <script defer="defer" src="./src/manifest.js" id="manifest-js"></script>
+        <script defer="defer" src="./src/vendor.js" id="vendor-js"></script>
 
-        <script defer src="./src/theme.js" id="theme-js"></script>
+        <script id="theme-js-extra">
+          var globalData = {
+            publicUrl: "/unseen/public/",
+            assetsUrl: "/unseen/resources/assets/",
+          };
+        </script>
+
+        <script defer="defer" src="./src/theme.js" id="theme-js"></script>
+      
+        
       </main>
     </div>
     <div
@@ -1567,5 +1564,7 @@ C58.3,39.1,57.8,38.5,57.1,38.5z"
     </div>
     <div class="height-div"></div>
     <!-- Script tags must be in this order -->
+
+  
   </body>
 </html>
