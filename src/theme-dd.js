@@ -5217,7 +5217,7 @@
         }
       }
       function ft(e) {
-        return `${o.assetsUrl}${e}?v=1757497884121`;
+        return `${o.assetsUrl}${e}?v=1755878051797`;
       }
       let gt, vt, xt;
       const yt = () =>
@@ -15226,8 +15226,7 @@
             o.AssetLoader.add(
               new Promise((e) => {
                 (this.canvasArrow.onload = e),
-                  (this.canvasArrow.src =
-                    "/wp-content/themes/unseen/resources/assets/svg-sprite/arrow.svg");
+                  (this.canvasArrow.src = "/arrow.svg");
               })
             );
           for (let e = 0; e < window.projects.length; e++) {
@@ -17088,6 +17087,7 @@
                   });
                 }),
                 n.off("AssetLoader:beforeResolve", this.onFirstAssetsLoad);
+              this.onFirstAssetsLoad();
             }),
             (i = "onFirstAssetsLoad") in (t = this)
               ? Object.defineProperty(t, i, {
@@ -17099,6 +17099,7 @@
               : (t[i] = s);
         }
         onFirstLoad() {
+          if (typeof window !== "undefined") window.__unseenApp = this;
           if (
             ((o.ASScroll = new (d())({
               disableRaf: !0,
@@ -19767,22 +19768,22 @@
       }
       class Ho {
         static toEyes() {
-          p("link[rel*='icon']").forEach((e) => {
-            e.href =
-              "/wp-content/themes/unseen/resources/assets/images/eyes-" +
-              e.sizes +
-              ".png?=" +
-              Math.random();
-          });
+          // p("link[rel*='icon']").forEach((e) => {
+          //   e.href =
+          //     "/wp-content/themes/unseen/resources/assets/images/eyes-" +
+          //     e.sizes +
+          //     ".png?=" +
+          //     Math.random();
+          // });
         }
         static toDefault() {
-          p("link[rel*='icon']").forEach((e) => {
-            e.href =
-              "/wp-content/themes/unseen/public/favicon/favicon-" +
-              e.sizes +
-              ".png?=" +
-              Math.random();
-          });
+          // p("link[rel*='icon']").forEach((e) => {
+          //   e.href =
+          //     "/wp-content/themes/unseen/public/favicon/favicon-" +
+          //     e.sizes +
+          //     ".png?=" +
+          //     Math.random();
+          // });
         }
       }
       function No(e, t) {
