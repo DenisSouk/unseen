@@ -1000,12 +1000,12 @@
             this.transitions = e
         };
         s.prototype.getOrigin = function(t) {
-            var e = t.match(/(https?:\/\/[\w\-.]+)/);
+            var e = t.match(/(http?:\/\/[\w\-.]+)/);
             return e ? e[1].replace(/https?:\/\//, "") : null
         }
         ,
         s.prototype.getPathname = function(t) {
-            var e = t.match(/https?:\/\/.*?(\/[\w_\-./]+)/);
+            var e = t.match(/http?:\/\/.*?(\/[\w_\-./]+)/);
             return e ? e[1] : "/"
         }
         ,

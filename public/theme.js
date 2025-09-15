@@ -14014,6 +14014,7 @@
               (e[t + 2] = n + this.centralPosition.z),
               (e[t + 3] = t % 12 == 0 ? 1 : 2);
           }
+
           const t = [];
           for (let e = 0, i = 4 * this.count; e < i; e += 4) {
             const i = Math.random() - 0.5,
@@ -14114,6 +14115,7 @@
               this.positionSim.fboUv.attributeInstanced
             ),
             this.geometry.computeTangents();
+
           const i = [],
             r = [];
           for (let e = 0; e < this.count; e++) {
