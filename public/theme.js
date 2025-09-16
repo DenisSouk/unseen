@@ -14074,7 +14074,7 @@
             (this.velocitySim.uniforms.u_position.value =
               this.positionSim.texture),
             (this.geometry = this.assets.models.butterfly.geometry),
-            this.geometry.scale(16, 16, 16),
+            //this.geometry.scale(16, 16, 16),
             this.geometry.rotateY(s.M8C.degToRad(-90)),
             (this.material = new s.jyz({
               vertexShader:
